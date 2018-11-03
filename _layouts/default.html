@@ -3,20 +3,21 @@
 <head>
   <meta charset="utf-8">
   <title>Learn along</title>
+  <link href="{{site.baseurl}}/css/common.css" rel="stylesheet">
 </head>
 <body>
 
   <header>
     <strong>Learn along</strong>
-    <nav>
-      <ul>
-        <li><a href="{{site.baseurl}}/index.html">Home</a></li>
-        <li><a href="{{site.baseurl}}/design.html">Design</a></li>
-      </ul>
-    </nav>
+    {% include nav.html %}
   </header>
 
 {{content}}
+
+  <footer>
+    {% include nav.html %}
+    <p>© copyright • Learn Along 2018</p>
+  </footer>
 
 </body>
 </html>
