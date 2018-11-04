@@ -1,5 +1,17 @@
 ---
-layout: default
+layout: design-trends
+mastheadClass: masthead-design
+title: Design Along
+meta: Design is a great learning tool for everyone
 ---
 
 <h1>Design</h1>
+
+<ul>
+  {% for design in site.categories.design %}
+  <li>
+    <a href="{{site.baseurl}}{{design.url}}">{{design.title}}</a>
+    <p>{{design.meta}}</p>
+  </li>
+  {% endfor %}
+</ul>

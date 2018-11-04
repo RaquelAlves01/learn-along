@@ -1,6 +1,29 @@
 ---
 layout: default
+titleAfter: Stellar place to get your learning on
+meta: Learn Along is the website made for you to learn how to get by
+priority: 1.0
 ---
 
 <h1>Learn along</h1>
-<p>Lots to learn today</p>
+<p>Lots to learn today loreming and drawing is an ultimate way to get those creative juices working</p>
+
+<h2>Drawings</h2>
+<ol>
+  {% for drawing in site.data.drawings %}
+  <li>
+    <a href="">{{drawing.title}}</a>
+    <p>{{drawing.content | markdownify}}</p>
+  </li>
+  {% endfor %}
+</ol>
+
+<h2>Design</h2>
+<ul>
+  {% for design in site.categories.currently-on %}
+  <li>
+    <a href="{{site.baseurl}}{{design.url}}">{{design.title}}</a>
+    <p>{{design.meta}}</p>
+  </li>
+  {% endfor %}
+</ul>

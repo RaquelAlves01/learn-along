@@ -1,0 +1,17 @@
+.masthead {
+  padding: 1em;
+
+  background-image: radial-gradient(rgba(0, 0, 0, 1), rgba(123, 123, 134, 1));
+
+  color: #fff;
+}
+
+.masthead-design {
+  padding: 1em;
+
+  background-image: url('https://placehold.it/200x100') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  color: #fff;
+}

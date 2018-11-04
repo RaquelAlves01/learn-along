@@ -1,0 +1,20 @@
+<ul>
+  {% for designContent in site.pages %}
+    {% if designContent.type == include.type %}
+    <li>
+      <a href="{{site.baseurl}}{{designContent.url}}">
+        <h3>{{designContent.title}}</h3>
+        <img src="{{designContent.image}}" alt="Photo related to {{designContent.title}}">
+        <p>{{designContent.meta}}</p>
+        <dl>
+          <dt>Citation: {{designContent.cite}}</dt>
+          <dd>Cited on: {{designContent.cited}}</dd>
+        </dl>
+        <p></p>
+        <p>Linkage with reality: {{designContent.link}}</p>
+        <span><b>Reliability:</b> {{designContent.reliability}}</span>
+      </a>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>

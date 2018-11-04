@@ -1,0 +1,14 @@
+---
+layout: design-trends
+---
+
+<h1>Currently on:</h1>
+
+<ul>
+  {% for drawing in site.categories.currently-on %}
+  <li>
+    <a href="{{site.baseurl}}{{drawing.url}}">{{drawing.title}}</a>
+    <p>{{drawing.meta}}</p>
+  </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<strong>Hot Trends</strong>
+
+<nav>
+  <ul class="nav-trends">
+    <li><a class="{% if page.url contains 'design' %}current{% endif %}" href="{{site.baseurl}}/design/index/">Design</a></li>
+    <li><a class="{% if page.url contains 'currently-on' %}current{% endif %}" href="{{site.baseurl}}/currently-on/">Currently-on</a></li>
+  </ul>
+</nav>
+
+{{content}}

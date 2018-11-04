@@ -1,0 +1,44 @@
+.nav,
+.nav-trends {
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.nav li,
+.nav-trends li {
+  display: inline-block;
+  margin: .5em 0 1em;
+  padding: .1em .1em;
+}
+
+.nav li a,
+.nav-trends li a {
+  text-decoration: none;
+  color: #525252;
+  padding: .5em;
+}
+
+.nav li a:hover,
+.nav-trends li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: pink;
+}
+
+.current {
+  background-color: pink;
+  color: #fff;
+  text-decoration: none;
+  padding: .125em;
+}
+
+.nav-top {
+  font-size: 1.25em;
+  color: #fff;
+}
+
+.nav-bottom {
+  font-size: .9em;
+}

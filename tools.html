@@ -1,0 +1,12 @@
+---
+layout: default
+title: Tools
+---
+
+<h1>Tools</h1>
+
+  {% for design in site.tools %}
+    <img src="https://placehold.it/200x100" alt="">
+    <h2>{{tools.title}}</h2>
+    <a href="{{site.baseurl}}{{tools.url}}">Read more {{tools.title}}</a>
+  {% endfor %}

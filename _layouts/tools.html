@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<nav>
+  <ul class="nav-trends">
+    {% for tools in site.tools %}
+      <li><a class="{% if page.url contains 'tools.slug' %}current{% endif %}" href="{{site.baseurl}}/tools/{{tools.slug}}/">{{tools.title}}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
+
+<h1>{{page.title}}</h1>
+<figure>
+  <img src="https://placehold.it/200x100" alt="">
+  <figcaption>{{content}}</figcaption>
+</figure>

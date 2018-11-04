@@ -1,5 +1,17 @@
 ---
-layout: default
+layout: design-trends
+title: Drawing 101
+meta: My drawing brings all the boys to my yard ;)
+changefreq: weekly
 ---
 
-<h1>Design</h1>
+<h1>Drawing</h1>
+
+<ul>
+  {% for drawing in site.categories.drawing %}
+  <li>
+    <a href="#">{{drawing.title}}</a>
+    <p>{{drawing.meta}}</p>
+  </li>
+  {% endfor %}
+</ul>
