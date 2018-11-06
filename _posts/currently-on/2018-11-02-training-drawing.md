@@ -7,4 +7,4 @@ category: design
 ---
 
 blah blah blah
-this is to see if this damn thing actually fucking works cause GAWDdamn fuck this JEKYLL nonsense
+this is to see if this damn thing actually works cause GAWD this JEKYLL is complicated
